@@ -33,14 +33,14 @@
     </alumno>
     <alumno id="a4" edad= "27" becado="no">
         <nombre>Juan </nombre>
-        <apellido></apellido>
-        <curso></curso>
+        <apellido>Gomez</apellido>
+        <curso>Programación</curso>
 
     </alumno>
     <alumno id="a5" edad= "18" becado="si">
         <nombre>Eros </nombre>
-        <apellido></apellido>
-        <curso></curso>
+        <apellido>Ramales</apellido>
+        <curso>Algoritmos</curso>
 
     </alumno>
 
