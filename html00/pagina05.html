@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-shadow: 10px 10px 20px red;
+        }
+        figure{
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <H1>Random picture</H1>
+
+    <div id="demo"></div>
+
+    <script>
+        let ejemplo = document.getElementById("demo");
+        console.log(ejemplo);
+        
+        ejemplo.innerHTML = "hola"
+
+        function imagen(id) {
+            const  componente = "<figure>" + 
+
+            "<img src='https://picsum.photos/id/" + id + "/200/200' alt='x'>" +
+            "<figcaption>John</figcaption>" +
+            "</figure>" 
+
+            return componente
+            
+        } 
+        
+        const Picture = (id) => {
+            return `
+                <figure>
+                    <img src="https://picsum.photos/id/${id}/200/200" alt="x">
+                    <figcaption>Jane</figcaption>
+                </figure>
+            `;
+        };
+
+
+        // ejemplo.innerHTML="hola" + imagen(1) + imagen(2)
+        
+        ejemplo.innerHTML = "hola" + Picture(1)
+
+    </script>
+</body>
+</html>
