@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 15px 20px 10px;
+    flex-direction: column;
+    align-items: center; /* Aquí centramos los inputs dentro del form */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Centra el texto de las etiquetas */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center; /* Centra el texto dentro del input */
+}
+
+input[type="submit"], input[type="button"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
