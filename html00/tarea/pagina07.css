@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f0ff; /* azul claro de fondo */
+}
+
+h1 {
+    text-align: center;
+    color: #003366; /* azul oscuro */
+}
+
+form {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 2px solid #007bff; /* azul */
+    border-radius: 8px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 102, 0.2);
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff; /* azul muy claro */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #003366;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #003366;
+}
+
+input[type="text"]::placeholder {
+    color: #7aa7e0;
+}
+
+button#btn {
+    width: 120px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#btn:hover {
+    background-color: #0056b3;
+}
